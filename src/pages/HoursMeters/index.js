@@ -52,10 +52,10 @@ const backPage = () => {
     <View style={{padding:10, }}>
         <MyInput label="Nama Operator"/>
         <MyGap jarak={20}/>
-        <MyInput label="Proyek Yang di Kerjakan"/>
+        <MyInput label="Proyek Yang Dikerjakan"/>
         <MyGap jarak={20}/>
         <TouchableOpacity onPress={showStartTimePickerModal}>
-        <Text style={{fontSize: 16, color: colors.black, fontFamily:fonts.primary[400], left:10}}>Mulai Kerja</Text>
+        <Text style={{fontSize: 16, color: colors.black, fontFamily:fonts.primary[400], left:10}}>Jam Mulai Kerja</Text>
         <View style={{ height: 50, justifyContent: 'center', borderBottomWidth: 1, borderBottomColor: colors.gray }}>
               <Text style={{fontSize: 16, color: colors.black, left:20}}>{startTime.toLocaleTimeString()}</Text>
             </View>
@@ -72,7 +72,7 @@ const backPage = () => {
           )}
         <MyGap jarak={20}/>
         <TouchableOpacity onPress={showEndTimePickerModal}>
-        <Text style={{fontSize: 16, color: colors.black, fontFamily:fonts.primary[400], left:10}}>Terakhir Kerja</Text>
+        <Text style={{fontSize: 16, color: colors.black, fontFamily:fonts.primary[400], left:10}}>Jam Terakhir Kerja</Text>
             <View style={{ height: 50, justifyContent: 'center', borderBottomWidth: 1, borderBottomColor: colors.gray }}>
               <Text style={{fontSize: 16, color: colors.black, left:20}}>{endTime.toLocaleTimeString()}</Text>
             </View>
@@ -88,7 +88,7 @@ const backPage = () => {
             />
           )}
         <MyGap jarak={20}/>
-        <MyCalendar label="Tanggal"/>
+        <MyCalendar label="Tanggal Kerja"/>
         <MyGap jarak={20}/>
         <MyInput label="Kode Unit"/>
         <MyGap jarak={20}/>
